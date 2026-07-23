@@ -1,7 +1,29 @@
 aid: anda
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anda.png
 name: Anda
-description: Anda is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Anda (andaafrica.com) is an Angolan mobility and delivery company that operates
+  ride-hailing and courier services using motorcycles, electric motorcycles, and
+  tuk-tuks, integrating technology, finance, and sustainability to serve people and
+  businesses across Angola. Anda runs a drive-to-own model that empowers drivers to
+  own their vehicles through training (ANDA Academia), insurance, maintenance support,
+  and safe operating hubs, turning informal transport work into stable livelihoods.
+  Moto-taxi rides are fulfilled through the Yango app, alongside green electric-motorcycle
+  options, tuk-tuk transport, and express delivery. The company is based in Talatona,
+  Angola, and is a portfolio company of Speedinvest (invested 2025). Anda does not
+  currently publish any public API or developer documentation; this profile captures
+  the verified company identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/anda/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,36 @@ x-backed-by:
 - speedinvest
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-api-provider: false
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Mobility
+- Ride-hailing
+- Delivery
+- Transportation
+- Fintech
+- Electric Vehicles
+- Sustainability
+- Africa
+- Angola
 apis: []
+common:
+- type: DomainSecurity
+  url: security/anda-domain-security.yml
+- type: Website
+  url: https://andaafrica.com
+- type: Support
+  url: https://andaafrica.com/contactos/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
